@@ -7,4 +7,3 @@ const PI = 3.14;
 
 // 출력 방식 2가지
 console.log(name + " : " + PI);
-alert(name);
