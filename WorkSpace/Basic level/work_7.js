@@ -22,7 +22,7 @@ const isAge = prompt("몇살인가 ? ");
 
 if(isSex === '남자' && (name === 'Mike' || isAge >= 20))
 {
-    console.log("통과")
+    console.log("통과");
 }
 else {
     console.log('노');
