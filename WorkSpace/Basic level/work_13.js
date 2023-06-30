@@ -18,6 +18,7 @@ let man = boy; // 사람은 한 명인데, 별명은 두 개이다.
 
 // man의 이름을 Tom으로 바꾸면, boy의 이름도 바뀐다.
 man.name = "Tom";
+boy.showName()
 
 
 // 바꾼 후, 
