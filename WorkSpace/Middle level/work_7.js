@@ -98,6 +98,51 @@ const result92 = os.filter((item) => {
 console.log(result92);
 
 // arr.map(fn) : 함수를 받아 특정 기능을 시행하고, 새로운 배열을 반환.
+let newUserList = userList.map((user, index) => {
+    return Object.assign({}, user,{
+        isAdult : user.age > 19
+    });
+});
+
+console.log(newUserList);
+console.log(userList);
+
+// join : 배열을 합쳐서 문자열을 만드는 기능
+// () 안에 아무것도 없으면 , 넣는다.
+
+let arr = ["안녕", "나는", "스파이더맨이야"];
+let result23 = arr.join("-");
+
+console.log(result23);
+
+// split : 문자열을 () 기준으로 나눠서 배열로 만들어주는 기능
+// () 안에 ""가 들어 있으면, 한 글자 씩 배열로 !
+const users1 = "Mike, is very good !"
+const result122 = users1.split("");
+
+console.log(result122);
+
+// typeof는 객체와 배열을 모두 Object로 처리한다. - 구분을 하지 못한다.
+// Array.isArray()는 boolean 자료형 반환을 통해 배열인지 아닌지 확인시켜 준다.
+
+let oob = {
+    name : "iosa",
+    age : 1001230
+};
+
+let ioasd = ["sasd", "asasd", "asasd"];
+
+console.log(typeof oob);
+console.log(typeof ioasd);
+
+console.log(Array.isArray(oob));
+console.log(Array.isArray(ioasd));
+
+
+
+
+
+
 
 
 
